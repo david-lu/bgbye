@@ -1,2 +1,2 @@
 REM Run setup.sh in WSL
-wsl ./setup.sh
+ubuntu run bash -ic "cd '$(wsl wslpath $PWD)' && exec bash"

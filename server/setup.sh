@@ -7,6 +7,8 @@ sudo apt update
 sudo apt install -y python3-pip python3-venv pngcrush libjpeg-turbo-progs jpegoptim \
     libgl1 libglx-mesa0 libglib2.0-0 libsm6 libxext6 libxrender-dev ffmpeg
 
+sudo snap install ffmpeg
+
 # Create and activate a virtual environment
 python3 -m venv venv
 source venv/bin/activate
