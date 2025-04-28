@@ -284,7 +284,7 @@ async def process_video(video_path, method, video_id):
 
 
         # Check video frame count
-        frame_count_command = ['ffmpeg.ffprobe', '-v', 'error', '-select_streams', 'v:0', '-count_packets', 
+        frame_count_command = ['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-count_packets', 
                                '-show_entries', 'stream=nb_read_packets', '-of', 'csv=p=0', video_path]
         process = await asyncio.create_subprocess_exec(
             *frame_count_command,
